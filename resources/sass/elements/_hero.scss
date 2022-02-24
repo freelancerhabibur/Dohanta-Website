@@ -1,0 +1,42 @@
+.hero-carousel {
+    margin-top: 20px;
+    
+    .slider-caption {
+        padding: 260px 30px 120px;
+
+        h1 {
+            color: var(--color-theme);    
+            letter-spacing: 0.8px;
+            opacity: 0;
+        }
+        p {
+            color: var(--color-white);
+            font-size: 1.5rem;
+            margin: .7rem 0 1.5rem;
+            opacity: 0;
+        }
+        a {
+            padding: 0.6rem 2rem;
+            border: 1px solid var(--color-white);
+            color: var(--color-white);
+            display: inline-block;
+            font-family: var(--font-gothamBold);
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            border-radius: 3px;
+            opacity: 0;
+
+            &:hover {
+                background-color: var(--color-theme);
+                border-color: var(--color-theme);
+                padding: 0.6rem 2.3rem;
+            }
+        }
+    }
+    .owl-item.center {
+        h1, p, a {
+            opacity: 1;
+        }
+    }
+
+}
